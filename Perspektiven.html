@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Dokumentation Digitale Kommunikation</title>
+		<meta name="Dokumentation" content="Digitale Kommunikation" />
+		<meta name="Leonie Manthey" content="me" />
+
+		<link rel="stylesheet" type="text/css" href="/style.css" />
+	</head>
+
+	<body>
+
+        <nav class="navigation_bar">
+			<div class="nav_logo">LM Doku</div>
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<div class="list-container">
+				<ul>
+					<li class="liindex"><a href="index.html">Herzlich Willkommen</a></li>
+					<li class="liindex"><a href="#">Perspectives with P5JS</a></li>
+					<li class="liindex"><a href="Partikel.html">Little little creatures</a></li>
+					<li class="liindex"><a href="Abschlussprojekt.html">The sleeping uncle</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<aside class="seite"></aside>
+
+        <img class="Perspektive" src="assets/images/perspektive_mit_Sternenhimmelbild.png" 
+        alt="Perspektive" 
+        title="Perspektive mit Sternenhimmelbild">
+
+		<h1>Perspektiven mit P5JS</h1>
+        <h2>"Perspectives"</h2>
+        <div></div>
+
+	       <p>
+              Unser erstes Projekt mit P5JS war es, eine Perspektive zu coden.
+              
+           </p>
+
+           <div>
+            <h3>Replit</h3>
+
+              <p>Um überhaupt eine Codesprache in den Browser zu bekommen, haben wir mit der webbasierten
+              Entwicklungsumgebung Replit gearbeitet. Diese IDE enthält nämlich Code-Editoren, 
+              Compiler/Interpreter, Debugging-Tools und andere Hilfsmittel für Softwareentwicklung
+              in einer webbasierten Umgebung. Man kann hier also Code schreiben, ohne 
+              zusätzliche Software oder Konfigurationen zu installieren. Außerdem unterstützt
+              Replit eine vielzahl an Programmiersprachen und -umgebungen, wie in unserem Fall
+              P5JS. Dadurch dass wir in ein Team 'digitale-grundlagen-2023-24' eingeladen wurden, 
+              ist es sehr easy, seine Arbeit mit anderen zu teilen durch einen Link oder sogar zusammen daran zu 
+              arbeiten. Gerade dadurch, dass Replit bis jetzt eine Funktion für die Nutzung in 
+              Bildungseinrichtungen, wie unserer Hochschule, zur Verfügung gesellt hat, konnte 
+              man darüber Unterrichtsmaterialien und das Learning Management System nutzen. Leider hat 
+              Replit diese und weitere Funktionen eingestellt, weshlab wir im Laufe des Semesters nochmal
+              unsere intergrierte Entwicklungsumgebung wechseln mussten. Das finde ich äußerst schade. 
+              Die Gründe für die Einstellung sind mir nicht bekannt. Zu erwähnen ist noch, dass es 
+              sämtliche Bibliotheken und Pakete aller Art integriert hat. 
+              Nun habe ich genug darüber erzählt, was Replit ist und was es kann. 
+              Im Folgenden möchte ich zeigen, aus welchen Bestandteilen eine Replit-File 
+              zusammengesetzt ist. </p>
+
+              <img class="Perspektive" src="assets/images/DateieneinesProjektes.png" 
+              alt="Aufbau einer Datei in replit" 
+              title="Dateininhalte">
+
+              <h4>data</h4> 
+
+              <p>In diesem Ordner liegen z.B. die Bilder. </p>
+
+              <h4>index.html</h4>
+
+              <p>Hier wird der Inhalt der Seite im body-Tag beschrieben. Der Dokumenttyp, sowie die
+              HTML-Version sollten angegeben sein. Viewport-Einstellungen können definiert werden, 
+              damit die Seite z.B. auch auf dem iPad oder Handy super aussieht. Auch der Titel 
+              der Seite kann festgelegt werden. Ein stylesheet und eine library können verlinkt 
+              werden, damit die Seite mit diesen Informationen ausgestattet werden kann. 
+              Wichtig ist auch, dass die sketch.js, in der sich unser P5JS-Code befindet, verknüpft ist. </p>
+
+              <h4>README.md</h4>
+
+              <p>In der README befinden sich idealerweise Dinge wie: </p>
+
+              <ol>
+                <li>Die Projektbeschreibung</li>
+                <li>Die Installationsanweisungen</li>
+                <li>Die Verwendung</li>
+                <li>Die Beispielanwendungen</li>
+                <li>Die Dokumentation</li>
+                <li>Die Hinweise zur Fehlerbehebung</li>
+                <li>Das Breitragsende</li>
+            </ol>
+
+            <h4>sketch.js</h4>
+
+            <p>In dieser Datei steht unser Code, den wir für die Erstellung ineraktiver Grafiken und Animationen brauchen. </p>
+
+            <h4>style.css</h4>
+
+            <p>Die style.css beschreibt das Aussehender Seite. Hier 
+                können z.B. Die Abstände und Eigenschaften von Texten bestimmt 
+                werden.
+            </p>
+
+        </div>
+
+           <img class="Perspektive" src="assets/images/perspektive_mit_Sternenhimmelbild.png" 
+           alt="Bilschirmfoto Perspektive mit Himmelbild als Hintergrund" 
+           title="Himmelperspektive zwischen Hochhäusern">
+
+           <p>
+              In diesem Bild sieht man, dass ich die Linien der Häuser 
+              jeweils selbst beschrieben habe. – Ein riesen Aufwand!
+              Als Hintergrund habe ich ein Image eines Sternenhimmels gewählt,
+              da ich nicht wusste, wie sich random Sterne genereieren lassen 
+              könnten. Darauf hat michd er Dozent ebenfalls aufmerksam gemacht.
+           </p>
+           <p>
+              Ich habe mich im Nachhinein also nochmal rangesetzt, um die Sterne
+              auch per Code strahlen bzw blinken zu lassen. Das Generieren hat viel 
+              leichter funktioniert als ich dachte.
+           </p>
+
+           <img class="Perspektive" src="assets/images/perspektive_mit_generiertem Himmel.png" 
+            alt="Bilschirmfoto Perspektive mit generierten Sternen" 
+            title="Himmelperspektive zwischen Hochhäusern">
+
+           <p>
+              Ich musste nur einen Hintergrund mit einer Transparenz hinzufügen und
+              anschließend eine Variable erstellen, der ich den Namen Sternenhimmel 
+              gegeben habe.
+              In dieser Variable habe ich die Positionen von X und Y der Sterne auf 
+              dem Hintergrund als random festgelegt. Die Größe ist ebenfalls auf 
+              random gestellt. 
+              Die erste Ellipse erstellt Sterne, die vom Mauszeiger generiert werden.
+              Diese sind allerdings nur sichtbar, wenn man die Maus auch schnell bewegt,
+              da der Mond über diesen Sternen liegt.
+              Die zweite Ellipse erstellt mit zufälligen Positionne und Größen die Sterne
+              auf dem background.
+           </p>
+		</div>
+		<script type="text/javascript" src="/index.js"></script>
+	</body>
+</html>
