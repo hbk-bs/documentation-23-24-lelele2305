@@ -1,7 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-	console.log("Funktionuckelt");
-});
-
 const toggleButton = document.getElementsByClassName("toggle-button")[0]
 const listContainer = document.getElementsByClassName("list-container")[0]
 
