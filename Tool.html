@@ -36,7 +36,8 @@
 		<h1>Ein interaktives Tool</h1>
         <p>Hier kannst du mehr über die verwendeten Plattformen erfahren:</p>
 
-        <div>
+        <article class="mehrspaltig">
+			<div class="github">
 			<details>
 			<summary>Github</summary>
 
@@ -46,10 +47,10 @@
 			</p>
 
 			<figure>
-				<img class="Tool" src="assets/images/BenutzeroberflächeGithub.png" 
+				<img id="githubimg" class="Tool" src="assets/images/BenutzeroberflächeGithub.png" 
 				alt="Benutzeroberfläche von Github" 
 				title="Github">
-				<figcaption class="Bildunterschrift">Die Benutzeroberfläche von Github.</figcaption>
+				<figcaption id="githubfig" class="Bildunterschrift">Die Benutzeroberfläche von Github.</figcaption>
 			</figure>
 
 			<p>
@@ -84,8 +85,9 @@
 				Mit Netlify kann man sich das Ganze dann auch im Web anschauen.
 			</p>
 		    </details>
+		    </div>
 
-			<details>
+			<details class="githubdesktop">
 				<summary>Github Desktop</summary>	
 			<p>Github Desktop ist eine Anwendung, die von Github entwickelt wurde und es Benutzern ermöglicht, Github ohne die
 				Notwendigkeit von Befehlszeilenoperationen zu nutzen. ES vereinfacht das Arbeiten mit Git-Repositories. Die 
@@ -107,24 +109,24 @@
 			</p>
 
 			<figure>
-				<img class="Tool" src="assets/images/GithubDesktopChanges.png" 
+				<img id="gitdeskimg" class="Tool" src="assets/images/GithubDesktopChanges.png" 
 				alt="Github Desktop Änderungen schreiben" 
 				title="GithubDesktop">
-				<figcaption class="Bildunterschrift">Die Bezeichnung der Änderungen in Github Desktop schreiben.</figcaption>
+				<figcaption id="gitdeskfig" class="Bildunterschrift">Die Bezeichnung der Änderungen in Github Desktop schreiben.</figcaption>
 			</figure>
 
 			<figure>
-				<img class="Tool" src="assets/images/GithubDesktopPush.png" 
+				<img id="gitdeskimg" class="Tool" src="assets/images/GithubDesktopPush.png" 
 				alt="Github Desktop Änderungen pushen" 
 				title="GithubDesktop">
-				<figcaption class="Bildunterschrift">Die Bezeichnung der Änderungen in Github Desktop pushen.</figcaption>
+				<figcaption id="gitdeskfig" class="Bildunterschrift">Die Bezeichnung der Änderungen in Github Desktop pushen.</figcaption>
 			</figure>
 
 			<figure>
-				<img class="Tool" src="assets/images/GithubDesktopBranch.png" 
+				<img id="gitdeskimg" class="Tool" src="assets/images/GithubDesktopBranch.png" 
 				alt="Github Desktop Branch" 
 				title="GithubDesktop">
-				<figcaption class="Bildunterschrift">Die Branches bei Github Desktop.</figcaption>
+				<figcaption id="gitdeskfig" class="Bildunterschrift">Die Branches bei Github Desktop.</figcaption>
 			</figure>
 
 			<p><strong>Probleme mit Github: </strong>Durch die relativ kurzfristige Umstellung auf Github gab es zu Beginn Schwierigkeiten 
@@ -135,13 +137,14 @@
 				die Pull Requests haben bei mir für Verwirrung gesorgt. 
 			</p>
 			<p><strong>Umgang mit Github jetzt: </strong>Die genannten Probleme bestanden nur temporär. Man lernt ja immer etwas dazu.
-				Wenn ich mit Github, Netflify und Visual Studio Code jetzt an meiner okumentation arbeite habe ich keine 
+				Wenn ich mit Github, Netlify und Visual Studio Code jetzt an meiner okumentation arbeite habe ich keine 
 			    großen Probleme, die nicht zeitnah durch Ausprobieren funktionieren würden. Ich kann mir auch in Zukunft 
 			    vorstellen, weiterhin mit Github zu arbeiten und mehr Erfahrungen im Umgang mit der Plattform zu sammeln.
 			    Möglicherweise begegnet sie mir sowieso im Berufsleben wieder!</p>
 			</details>
+		   
 
-			<details>
+			<details class="vscode">
 			<summary>Visual Studio Code</summary>
 
 			<p>Visual Studio Code (VS Code) ist ein kostenloser plattformübergreifender Code-Editor. Er bietet eine vielzahl von
@@ -162,17 +165,17 @@
 			</p>
 		    </details>
 
-			<details>
+			<details class="netlify">
 			<summary>Netlify</summary>
 
 			<figure>
-				<img class="Tool" src="assets/images/Netlify.png" 
+				<img id="netlifyimg" class="Tool" src="assets/images/Netlify.png" 
 				alt="Die Netltify-Benutzeroberfläche" 
 				title="Netltify-Benutzeroberfläche">
-				<figcaption class="Bildunterschrift">Die Benutzeroberfläche von Netlify.</figcaption>
+				<figcaption id="netlifyfig" class="Bildunterschrift">Die Benutzeroberfläche von Netlify.</figcaption>
 			</figure>
 
-	           <p>Netflify ist eine Cloud-Plattform, die sich auf die Bereitstellung und das Hosting von statischen Websites sowie
+	           <p>Netlify ist eine Cloud-Plattform, die sich auf die Bereitstellung und das Hosting von statischen Websites sowie
 				  von serverseitig generierten JavaScrips-Apps spezialisiert hat. Auch hier möchte ich einige Merkmale nennen:
 				  <ol>
 					<li><strong>Statische Website-Hosting: </strong>Netlify ermöglicht es Entwicklern, statische Websites einfach und 
@@ -230,7 +233,9 @@
 				title="little tools index.html">
 				<figcaption class="Bildunterschrift">Die Index.html von "little tools".</figcaption>
 			</figure>
+		</article>
 
+		<div>
 			<p>
 				Du kannst dir im Folgenden gerne den JavaScript-Code zu diesem Tool anschauen:
 			</p>
@@ -445,8 +450,8 @@
 				</p>
 			  </div>
 			</details>
-
 		</div>
+		
 		<script type="text/javascript" src="/index.js"></script>
 	</body>
 </html>
