@@ -67,6 +67,11 @@ body {
     text-align: justify;
 }
 
+section {
+    max-width: 60em;
+    margin: auto;
+}
+
 ul{
     list-style-type: circle;
     padding: 0em 0em 0em 1em;
