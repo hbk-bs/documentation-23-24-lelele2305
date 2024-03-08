@@ -22,7 +22,7 @@
 				<span class="bar"></span>
 			</a>
 			<div class="list-container">
-				<ul>
+				<ul class="ulindex">
 					<li class="liindex"><a href="index.html">Herzlich Willkommen</a></li>
 					<li class="liindex"><a href="#">Perspectives with P5JS</a></li>
 					<li class="liindex"><a href="Tool.html">Little tools</a></li>
@@ -33,11 +33,14 @@
 
 		<aside class="seite"></aside>
 
-		<h1>Perspektiven mit P5JS</h1>
+		<h1>Was ist Replit? </br>
+         Was ist das Projekt "Perspectives"?</h1>
 
 	        <p>
               Unser erstes Projekt mit P5JS war es, eine Perspektive zu coden. Hierfür haben wir mit Replit 
-              gearbeitet. Wenn du mehr über Replit wissen willst, lies dir Folgendes durch: 
+              gearbeitet. Über die verwendete IDE zum Erstellen dieses Projektes, Replit, kann sich unter folgendem
+              Link erkundigt werden. Darunter beginnt direkt das Projekt!
+              
            </p>
 
            <div class="mehrspaltig">
@@ -63,22 +66,33 @@
               Im Folgenden möchte ich zeigen, aus welchen Bestandteilen eine Replit-File 
               zusammengesetzt ist. </p>
 
-              <img class="Perspektive" src="assets/images/Benutzeroberfläche.png" 
-              alt="Benutzeroberfläche von replit" 
-              title="Benutzeroberfläche">
+              <figure>
+                  <img class="Perspektive" src="assets/images/Benutzeroberfläche.png" 
+                  alt="Benutzeroberfläche von replit" 
+                  title="Benutzeroberfläche">
+                  <figcaption class="Bildunterschrift">Hier ein Einblick auf die Benutzeroberfläche von </br>
+                     Replit mit dem "Perspectives"-Projekt.
+                  </figcaption>
+              </figure>
 
               <details class="detaileinzug">
-               <summary>data</summary> 
+               <summary class="perspdateien">data</summary> 
 
-                 <img class="dateien" src="assets/images/DateieneinesProjektes.png" 
-                 alt="Aufbau einer Datei in replit" 
-                 title="Dateininhalte">
+               <figure class="dateiimgfloat">
+                  <img class="dateien" src="assets/images/DateieneinesProjektes.png" 
+                  alt="Aufbau einer Datei in replit" 
+                  title="Dateininhalte">
+               </figure>
 
-                 <p>In diesem Ordner liegen z.B. die Bilder. </p>
+                 <p class="cf">In diesem Ordner liegt </br> 
+                  z.B. ein weiterer Ordner namens </br>
+                  "assets" und in diesem kann ein </br>
+                  "images"-Ordner liegen, der </br>
+                  dann die Bilder enthält. </p>
               </details>
 
               <details class="detaileinzug">
-              <summary>index.html</summary>
+              <summary class="perspdateien">index.html</summary>
 
               <p>Hier wird der Inhalt der Seite im body-Tag beschrieben. Der Dokumenttyp, sowie die
               HTML-Version sollten angegeben sein. Viewport-Einstellungen können definiert werden, 
@@ -89,11 +103,11 @@
               </details>
 
               <details class="detaileinzug">
-              <summary>README.md</summary>
+              <summary class="perspdateien">README.md</summary>
 
-              <p>In der README befinden sich idealerweise Dinge wie: </p>
+              <p>In der <strong class="hervorhebungtext">README</strong> befinden sich idealerweise Dinge wie: </p>
 
-                  <ol>
+                  <ol class="readmeol">
                    <li class="readme">Die Projektbeschreibung</li>
                    <li class="readme">Die Installationsanweisungen</li>
                    <li class="readme">Die Verwendung</li>
@@ -105,24 +119,28 @@
               </details>
 
                <details class="detaileinzug">
-               <summary>sketch.js</summary>
+               <summary class="perspdateien">sketch.js</summary>
 
                      <p>In dieser Datei steht unser Code, den wir für die Erstellung ineraktiver Grafiken 
                         und Animationen brauchen. </p>
                </details>
 
                <details class="detaileinzug">
-                <summary>style.css</summary>
+                <summary class="perspdateien">style.css</summary>
 
                       <p>Die style.css beschreibt das Aussehender Seite. Hier 
                          können z.B. Die Abstände und Eigenschaften von Texten bestimmt 
-                        werden.
+                         werden.
                       </p>
                </details>
          </details>
-        
-         <details>
-          <summary>Meine Perspektive</summary>
+        </div>
+
+         <p>Nach einer kleinen Einführung in die IDE und einem kurzen Ausblick auf die Perspektive
+            kommt endlich das Projekt, um das es auf dieser Seite geht:</p>
+
+         <div>
+          <h2 class="littletoolh2">"Perspectives"</h2>
 
           <figure>
            <img class="Perspektive" src="assets/images/perspektive_mit_Sternenhimmelbild.png" 
@@ -135,15 +153,16 @@
 
            <p>
               In diesem Bild sieht man, dass ich die Linien der Häuser 
-              jeweils selbst beschrieben habe. – Ein riesen Aufwand!
+              jeweils selbst beschrieben habe. <strong class="hervorhebungtext">– Ein riesen Aufwand!</strong> 
               Als Hintergrund habe ich ein Image eines Sternenhimmels gewählt,
-              da ich nicht wusste, wie sich random Sterne genereieren lassen 
-              könnten. Darauf hat michd er Dozent ebenfalls aufmerksam gemacht.
+              da ich nicht wusste, wie sich random Sterne generieren lassen 
+              könnten. Darauf hat mich der Dozent in seinem Feedback zu meiner Perspektive
+              ebenfalls aufmerksam gemacht.
            </p>
            <p>
               Ich habe mich im Nachhinein also nochmal rangesetzt, um die Sterne
-              auch per Code strahlen bzw blinken zu lassen. Das Generieren hat viel 
-              leichter funktioniert als ich dachte.
+              auch per Code strahlen bzw. blinken zu lassen. Das Generieren hat viel 
+              leichter funktioniert als ich dachte. 
            </p>
 
            <figure>
@@ -173,9 +192,11 @@
 				title="Code">
 				<figcaption class="Bildunterschrift">Der Code für das Generieren des Sternenhimmels.</figcaption>
 			</figure>
-      </details>
-
 		</div>
+
+      <p class="endsatz">Wie hat dir "Perspectives" gefallen?</p>
+      <p>Hier geht es weiter zum Projekt <a class="azulittletools" href="Tool.html">"Little tools"</a>...</p>
+
 		<script type="text/javascript" src="/index.js"></script>
 	</body>
 </html>

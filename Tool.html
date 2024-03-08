@@ -22,7 +22,7 @@
 				<span class="bar"></span>
 			</a>
 			<div class="list-container">
-				<ul>
+				<ul class="ulindex">
 					<li class="liindex"><a href="index.html">Herzlich Willkommen</a></li>
 					<li class="liindex"><a href="Perspektiven.html">Perspectives</a></li>
 					<li class="liindex"><a href="#">Little tools</a></li>
@@ -36,7 +36,7 @@
 		<h1>Ein interaktives Tool</h1>
         <p>Hier kannst du mehr über die verwendeten Plattformen erfahren:</p>
 
-        <article class="mehrspaltig">
+        <article>
 			<div class="github">
 			<details>
 			<summary>Github</summary>
@@ -200,7 +200,7 @@
 			   </details>
 
 
-			<h2>"Little tools"</h2>
+			<h2 class="littletoolh2">"Little tools"</h2>
 
 			<p>Nach dieser Einführung in die neuen Plattformen möchte ich  mein Projekt vorstellen, welches ich unter dem 
 				Namen "Little tools" entwickelt habe. Es handelt sich um ein webbasiertes Zeichentool. Links gibt es eine kleine
@@ -240,8 +240,8 @@
 				Du kannst dir im Folgenden gerne den JavaScript-Code zu diesem Tool anschauen:
 			</p>
 
-			<details>
-			<summary>JavaScript-Code:</summary>
+			<details class="javadetail">
+			<summary class="javascriptcode">JavaScript-Code:</summary>
 			  <div class="Code">
 				<code>
 					const canvas = document.querySelector("canvas"), </br>
@@ -254,7 +254,7 @@
 				    ctx = canvas.getContext("2d");  //returns a drawing context on the canvas </br>
 				</code>
 
-				<p>
+				<p class="codedefinition">
 					Hier werden die jeweiligen Elemente ausgewählt und einer Konstanten oder einer Variable
 					zugeordnet.
 				</p>
@@ -268,7 +268,7 @@
 				    selectedColor = "#000"; </br>
 				</code>
 
-				<p>
+				<p class="codedefinition">
 					Den Variablen werden bestimmte Werte zugeordnet, Beim öffnen des Tools ist z.B. der Pinsel 
 					bereits ausgewählt und die Breite auf 5 gestellt. 
 				</p>
@@ -283,7 +283,7 @@
 				    } </br>
 				</code>
 
-				<p>
+				<p class="codedefinition">
 					Diese Funktion füllt den gesamten Canvas mit einer Hintergrundfarbe und stellt sicher, 
 					dass die ausgewählte Zeichenfarbe für nachfolgende Zeichenoperationen eingestellt ist.
 				</p>
@@ -299,7 +299,7 @@
 				    }); </br>
 			    </code>
 
-				<p>
+				<p class="codedefinition">
 					Der Code wird ausgeführt, wenn die Seite vollständig geladen ist und stellt sicher, dass
 					die Breite und Höhe des Canvas an die des Containers angepasst werden, um eine korrekte 
 					Darstellung zu gewährleisten. Dann wird der Hintergrund des canvas gesetzt.
@@ -316,7 +316,7 @@
 				    } </br>
 			    </code>
 
-				<p>
+				<p class="codedefinition">
 					Diese Funktion ist für den Beginn des Zeichnens. Es werden alle erforderlichen Einstellungen
 					für das Zeichnen getroffen. Sie legt also fest, wie dick und welche Farbe gewählt ist und dass 
 					der Benutzer zeichnet. Jetzt kann direkt also das Zeichnen beginnen.
@@ -337,7 +337,7 @@
 				    } </br>
 			    </code>
 
-				<p>
+				<p class="codedefinition">
 					Wenn der Benutzer den Pinsel oder das Radiergummi verwendet und die Maus bewegt, zeichnet diese Funktion
 					die Linie auf dem Canvas. Falls nichts dergleichen geschieht, passiert in dieser Funktion auch nichts.
 				</p>
@@ -356,7 +356,7 @@
 				    }); </br>
 			    </code>
 
-				<p>
+				<p class="codedefinition">
                     Dieser Code sorgt dafür, dass das ausgewählte Tool visuell hervorgehoben wird und die entsprechenden 
 					Variablenwerte aktualisiert werden, wenn der Benutzer auf eine Werkzeug-Schaltfläche klickt.
 				</p>
@@ -367,7 +367,7 @@
 				    sizeSlider.addEventListener("change", () => brushWidth = sizeSlider.value); //passing slider value as brush size </br>
 			    </code>
 
-				<p>
+				<p class="codedefinition">
 					Diese Zeile sorgt dafür, dass die Pinselbreite aktualisiert wird, wenn der Benutzer die Größe
 					des Pinsels über den Schieberegler verändert.
 				</p>
@@ -385,7 +385,7 @@
 				    }); </br>
 			    </code>
 
-				<p>
+				<p class="codedefinition">
 					Die ausgewählte Farbe wird visuell hervorgehoben und die entsprechenden Variablenwerte werden aktualisiert, 
 					wenn der Benutzer auf eine Farb-Schaltfläche klickt.
 				</p>
@@ -400,7 +400,7 @@
 				    }); </br>
 			    </code>
 
-				<p>
+				<p class="codedefinition">
 					Mit diesem Code ist es dem Benutzer möglich eine Farbe im Farbwähler auszuwählen.
 					Er stellt sicher, dass diese farbe sofort im UI angezeigt und angewendet wird.
 				</p>
@@ -414,7 +414,7 @@
 				    }); </br>
 			    </code>
 
-				<p>
+				<p class="codedefinition">
 					Es wird dafür gesorgt, dass beim Klicken auf "CLEAR" der gesamte Inhalt des Canvas
 					gelöscht wird und der Hintergrund wiederhergestellt wird.
 				</p>
@@ -430,7 +430,7 @@
 				    }); </br>
 			    </code>
 
-				<p>
+				<p class="codedefinition">
 					Beim Klicken auf den Button "SAVE" wird das Bild im Canvas heruntergeladen. 
 					Der Dateiname wird mit dem aktuellen Zeitstempel versehen.
 				</p>
@@ -443,7 +443,7 @@
 				    canvas.addEventListener("mouseup", () => isDrawing = false); </br>
 				</code>
 
-				<p>
+				<p class="codedefinition">
 					Diese Event-Listener ermöglichen es, mit der Maus auf dem Canvas zu interagieren, um
 					Zeichenoperationen durchzuführen, wie z.B. Linien zu ziehen, wenn die Maus bewegt wird, 
 					während die linke Maustaste gedrückt wird.
@@ -451,6 +451,9 @@
 			  </div>
 			</details>
 		</div>
+
+		<p class="endsatz">Wie hat dir "Perspectives" gefallen?</p>
+        <p>Hier geht es weiter zum Projekt <a class="azulittletools" href="Abschlussprojekt.html">"The sleeping uncle"</a>...</p>
 		
 		<script type="text/javascript" src="/index.js"></script>
 	</body>

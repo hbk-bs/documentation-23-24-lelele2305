@@ -22,7 +22,7 @@
 				<span class="bar"></span>
 			</a>
 			<div class="list-container">
-				<ul>
+				<ul class="ulindex">
 					<li class="liindex"><a href="index.html">Herzlich Willkommen</a></li>
 					<li class="liindex"><a href="Perspektiven.html">Perspectives </a></li>
 					<li class="liindex"><a href="Tool.html">Little tools</a></li>
@@ -34,10 +34,212 @@
 		<aside class="seite"></aside>
 
 		<h1>Abschlussprojekt</h1>
-        <h2>"The sleeping uncle"</h2>
-        <div>
+        
+        <article>
+			<p>
+				Als Klasse haben wir uns gemeinsam ein Projekt überlegt, mit dem wir das Semester beenden wollen.
+				Das Projekt ist ein interaktives echtes Spiel. Du befindest dich in real life in einem Raum und musst 
+				versuchen dein Sandwitch zu erreichen, welches in der Küche neben dem bösen Onkel liegt, ohne dass dieser davon wach wird. 
+				Das Schwierige dabei ist, dass du aufpassen musst, wo du dabei hintrittst. Auf dem Boden sind nämlich Platten ausgelegt, die den 
+				Onkel triggern können. Welche Platte jedoch was triggert, sieht und fühlt man nicht. Es gibt Platten, die garnichts tun.
+				Es gibt aber auch Platten, die ein Dielenknarren auslösen, den Onkel zum Schnarchen bringen oder sogar aufwecken.
+			</p>
+			<p> Für dieses Projekt wurde die ganze Klasse in verschiedene frei wählbare Gruppen 
+				eingeteilt: 
+				<ul class="aufzählunguncle">
+					<li><strong>Hardware:</strong> </br> programmiert mit Hilfe eines Arduino-Boards die Triggerbuttons, die dann
+						verschiedene Signale auslösen.
+					</li>
+					<li><strong>Physical Building:</strong> </br> für die pysische Umsetzung (Raum, Umgebung, Gegenstände, Löten,
+						Verbinden und Verstecken der Kabel, usw.) zuständig.</li>
+					<li><strong>Frontend:</strong> </br> für die Sounds und Ereignisse zuständig, die durch einen Triggerbutton
+						ausgelöst werden. Nutzt Triggerbuttons aus der Hardware.
+					</li>
+					<li><strong>Documentation:</strong> </br> für die Dokumentation des gesamten Projekts und der Fortschritte der
+						unterschiedlichen Gruppen zuständig. Erstellt eine Dokumentationswebsite.
+					</li>
+					<li><strong>Design:</strong> </br> für die Gestaltung der Gegenstände, Charaktäre und deren Reaktionen zuständig.</li>
+					<li><strong>Backend:</strong> </br> verbindet das Frontend und die Hardware. Bringt alles zusammen zum Laufen.</li>
+				</ul>
+				Ich habe mit einer Partnerin das Hardware-Team gebildet.
+			</p>
+
+			<figure>
+				<img class="uncle" src="assets/images/tsuarbeit1.png" 
+				 alt="Das Hardware-Team" 
+				 title="Das Hardware-Team">
+				 <figcaption class="Bildunterschrift">Das Hardware-Team</figcaption>
+			 </figure>
+
+			<details>
+			        <summary>Arduino</summary>
+					<p>Dieses Integrated Development Environment (IDE) ist eine Software, die für die
+						Programmierung von Arduino-Microcontrollern verwendet wird. Auch wir haben  
+						in meiner Gruppe mit einem solchen Microcontroller gearbeitet.  
+					</p>
+					
+					<p>Die Arduino IDE hat einige wichtige Komponenten, die ich hier nennen will:
+						<ul class="aufzählunguncle">
+							<li><strong>Texteditor:</strong> </br> in diesem kannst du den Code für deine Arduino-Projekte
+							schreiben. Er unterstützt Funktionen wie die Syntaxhervorhebung und automatische Vervollständigung,
+						    um die Programmierung zu erleichtern. – Programmierer sind bekanntlich sehr faul im Schreiben!:P</li>
+						    <li><strong>Compiler:</strong> </br> dieser übersetzt den von dir geschriebenen Arduino-Code in die 
+						    Maschinensprache, welche der Microcontroller dann ausführen kann.</li>
+							<li><strong>Uploader:</strong> </br> den kompilierten Code kannst du direkt auf den Arduino-Microcontroller
+							hochladen. Mit Hilfe einer USB-Verbindung zwischen dem Computer und dem Arduino-Board ist das möglich.</li>
+							<li><strong>Integrierte Bibliotheken:</strong> </br> die IDE enthält eine Vielzahl von Bibliotheken, die 
+							bereits geschriebene Codefragmente enthalten, die du dann wiederum in deine Projekte einbinden kannst.
+						    Diese Bibliotheken erleichtern das Arbeiten!</li>
+							<li><strong>Serielles Monitorfenster:</strong> </br> dies ermöglicht es dir, Daten von deinem Arduino-Microcontroller
+							zu überwachen und Debugging-Informationen anzuzeigen.</li>
+						</ul>
+						   <figure>
+							   <img class="uncle" src="assets/images/ArduinoIDE.png" 
+							    alt="Die ArduinoIDE" 
+							    title="Hardware für The sleeping uncle">
+							    <figcaption class="Bildunterschrift">Die Arduino-Benutzeroberfläche</figcaption>
+						    </figure>
+
+						<h3>Die Hardwarekomponenten der Arduino-Plattform:</h3>
+						   <ul>
+							<li><strong>Arduino-Board:</strong> </br> es ist das Herzstück der Arduino-Plattform! Es gibt verschiedene 
+							Modelle und Variatnten, die unterschiedliche Microcontroller verwenden und über verschiedene Funktionen
+						    und Anschlüsse verfügen. Die bekanntesten sind das Arduino UNO, Arduino MEGA und Arduino NANO. Wir haben
+						    mit dem Arduino UNO R4 WIFI gearbeitet.</li>
+							<li><strong>Microcontroller:</strong> </br> er ist im Prinzip das Gehirn des Systems eines jeden Arduino-Boards. Er ist ein 
+							integrierter Schaltkreis, der die Verarbeitung und Steuerung der Hardware übernimmt. </li>
+							<li><strong>Anschlüsse:</strong> </br> Arduino-Boards verfügen über verschiedene Anschlüsse, die es ermöglichen, 
+							Sensoren, Aktoren und andere elektronische Komponenten anzuschließen. Dazu gehören digitale und analoge 
+						    Ein- und Ausgangspins, serielle Schnittstellen (UART), I2C- und SPI-Schnittstellen, sowie die
+					        Stromversorgungsanschlüsse.</li>
+							<li><strong>Stromversorgung:</strong> </br> Arduino-Boards können über USB oder externe Stromquellen mit Strom 
+							versorgt werden. Sie verfügen in der Regel über einen USB-Anschluss zum Anschließen an den Computer oder Laptop
+						    und über einen Gleitstromanschluss zum Anschließen an eine externe Stromquelle.</li>
+							<li><strong>Peripheriekomponenten:</strong> </br> das sind z.B. LEDs, Tasten, Widerstände und Kondensatoren, die für 
+								bestimmte Funktionen oder zur Unterstützung bei der Entwicklung von Projekten nützlich sind.</li>
+						</ul>
+						<figure>
+							<img class="uncle" src="assets/images/tsuarbeit2.png" 
+							alt="Ein Arduino-Microcontroller" 
+							title="Hardwarecode für The sleeping uncle">
+							<figcaption class="Bildunterschrift">Arduino-Board mit einem Microcontroller</figcaption>
+						</figure>
+
+                        Auch wir haben in unserem Team mit all diesen Komponenten gearbeitet. Da wir vorher schon einmal mit der 
+						IDE Erfahrungen im Grundlagenseminar gemacht haben, kamen wir gut voran. Zeitlich hatten wir kein Problem. Mit der Hilfe des Dozenten
+						hat auch bei kleinen Problemen alles einwandfrei funktioniert am Ende.
+					</p>
+
+		    </details>
+
+
+			<h2 class="littletoolh2">"The sleeping uncle"</h2>
+
+			<h3>Das Hardwareteam</h3>
+			<p>
+				Unsere Aufgabe bestand darin, die Buttons für die einzelnen Platten zu programmieren. So, dass jeder Pin
+				an einer Druckplatte oder mehreren Druckplatten angeschlossen ist und beim Drauftreten ein Signal abgeschickt wird.
+			</p>
+
+			<figure>
+				<img class="uncle" src="assets/images/tsuarbeit3.png" 
+				 alt="Die ArduinoIDE" 
+				 title="Hardware für The sleeping uncle">
+				 <figcaption class="Bildunterschrift">AHier arbeiten wir am Code.</figcaption>
+			 </figure>
+
+			 <p>
+				Wir haben mehrfach an unserem Code gearbeitet und ihn modifiziert.
+				Verständnis für die Codesprache konnten wir relativ schnell entwickeln, 
+				indem wir uns nach dem Gelernten richteten und bei kleinen Verständnisproblemen
+				konnte der Dozent, sowie der gute ChatGPT helfen. 
+			 </p>
+
+			 <figure>
+				<img class="uncle" src="assets/images/tsuarbeit4.png" 
+				 alt="Die ArduinoIDE" 
+				 title="Hardware für The sleeping uncle">
+				 <figcaption class="Bildunterschrift">Das Arduino-Board am Laptop</figcaption>
+			 </figure>
+
+			 <p>
+				Um zu testen, ob der Code auch im Gebrauch funktioniert, mussten wir das 
+				Arduino-Board an den Laptop anschließen und dann mit Hilfe des Serial Monitoring
+				den Code ausführen. 
+			 </p>
+
+			 <figure>
+				<img class="uncle" src="assets/images/tsuarbeit5.png" 
+				 alt="Die ArduinoIDE" 
+				 title="Hardware für The sleeping uncle">
+				 <figcaption class="Bildunterschrift">Ausprobieren, ob der Code auf dem Board funktioniert</figcaption>
+			 </figure>
+
+			<p>
+				Das Arduinoboard reagiert auf die Befehle, wenn ein Button gedrückt wird. 
+				Also wenn ein Stromkreis geschlossen wird. 
+			</p>
+
+			<details>
+			    <summary>Kommunikation mit dem Frontend-Team</summary>
+			        <p>
+				        Unsere ausgewählten Buttons mussten wir an das Frontend-Team weiterrreichen, da dieses
+				        ihre Befehle darauf aufbauten. Es musste bestimmt werden, welcher Button was macht.
+				        von PIN 4 bis einschließlich PIN 8 wurde alles belegt.
+			        </p>
+				        <ul>
+				            <li><strong>PIN 4</strong> </br> bringt den Onkel zum Aufwachen.</li>
+					        <li><strong>PIN 5</strong> </br> ist der Button, um das Spiel zurückzusetzen und Neu zu starten.</li>
+					        <li><strong>PIN 6</strong> </br> erzeugt ein Dielenknarren.</li>
+					        <li><strong>PIN 7</strong> </br> lässt den Onkel laut Schnarchen.</li>
+					        <li><strong>PIN 8</strong> </br> ist der Button, der ausgelöst wird, wenn du das Sandwitch genommen hat
+			                und somit auch das Spiel gewinnt.</li>
+			            </ul>
+			        <p>
+				        Das Frontend hat zu jedem PIN die passenden Töne und Bilder, welche vom Design-Team kamen, 
+                        verbunden. Wenn der böse Onkel aufwacht, wird ein böses Gröhlen abgespielt und das Bild, welches 
+				        ihn zuvor schlafend gezeigt hat, verändert sich zu einem wachen aggressiven Onkel. 
+			        </p>
+		    </details>
 			
-		</div>
+            <details>
+			    <summary>Kommunikation mit dem Physical-Buildung-Team</summary>
+			        <p>
+				        Dadurch, dass wir sehr schnell fertig waren mit unserem Code, konnten wir dem Physical-Building-Team 
+				        unter die Arme greifen. Wir haben dabei geholfen die Platten auszuschneiden und zu bekleben. Wir haben 
+				        auch getestet, ob das Signal ausgelöst wird wenn man auf eine Druckplatte tritt. Wieviel Meter Kabel wir 
+				        benötigen haben wir ausgerechnet. Anschließend sind wir auf die Suche nach solchen Kabeln gegangen.
+				        Gefunden haben wir in den Geschäften, in denen wir waren keine, aber die anderen konnten später im Baumarkt dann
+				        doch noch welche auftreiben.
+			        </p>
+		    </details>
+
+			<h3>Feedback</h3>
+			<p>
+				Insgesamt fand ich unsere Idee richtig gut, jedoch nicht realistisch in der Zeit umsetzbar, die wir das Semester noch hatten. 
+				Rückwirkend kann ich sagen, dass sich jedes Team sehr bemüht hat. Dadurch, dass wir wussten, dass unser 
+				Zeitfenster klein ist, haben wir alles gegeben und sind schnell voran gekommen. Bis auf das Dokumentations-Team
+				wären wir alle sicherlich in der Zeit fertig geworden. Grade weil meine Partnerin und ich überall ausgeholfen hätten. 
+				Die Aufgaben waren relativ klar verteilt. Ich finde jedoch, dass der Austausch zwischen den Gruppen besser hätte sein 
+				können. Teilweise wusste ich garnicht, was die anderen so genau machen. Das hätte alles transparenter ablaufen können.
+				Ich bin sehr gespannt auf das Ergebnis unserer Arbeit. Es hat mir sehr viel Spaß gemacht, ein Teil von so einem doch relativ 
+				großen projekt zu sein. Dafür, dass wir alle das zum ersten Mal gemacht haben können wir meiner Meinung nach sehr stolz 
+				auf uns sein. Und für kommende Projekte dieser Art wissen wir, was wir besser machen können – Kommunikation und mehr Austausch, sowie 
+				Überblick über das ganze Projekt!
+			</p>
+
+			<figure>
+				<img class="uncle" src="assets/images/tsuarbeitdone.png" 
+				 alt="Daumen hoch" 
+				 title="Daumen hoch für unsere Arbeit">
+				 <figcaption class="Bildunterschrift">Mir hat es Spaß gemacht.</figcaption>
+			 </figure>
+
+		</article>
+
+
+		<p class="endsatz">Wie hat dir "The sleeping uncle" gefallen?</p>
+        <p>Hier geht es zurück zur ersten Seite <a class="azulittletools" href="index.html">Willkommen</a>...</p>
 		<script type="text/javascript" src="/index.js"></script>
 	</body>
 </html>

@@ -1,14 +1,7 @@
-# documentation-template
+Dokumentations-Website von Leonie über das 1. Semester der Digitalen Grundlagen
 
-template repo for semester documentation
+Diese Dokumentations-Website besteht aus einer Willkommensseite und 3 Seiten über verschiedene Projekte des 1. Semesters, welche in den Digitalen Grundlagen bearbeitet wurden. Beim ersten Projekt handelt es sich um "Perspectives". Perspektiven, die mit P5JS erzeugt wurden. Das zweite Projekt beschreibt ein interaktives Tool. Und zu guter Letzt wird das Abschussprojekt der gesameten Klasse vorgestellt. 
 
-## Todo:
+Hier ist der Link zur Website: https://dokumentationleonie.netlify.app
 
-- [ ] Add a short description of this repos content.
-- [ ] Make sure to add a license to your project. https://choosealicense.com/
-- [ ] Make sure to publish your project via Netlify.com
-- [ ] Make sure to add your images to the `assets/images` folder and link them in your documentation.
-
-## Hints
-
-- Don't reinvent the wheel. Use existing css libraries. Check out this list of classless css libraries: https://github.com/dbohdan/classless-css
+Ich wünsche dir viel Spaß beim Durchsehen. Lass gerne ein Feedback da!
