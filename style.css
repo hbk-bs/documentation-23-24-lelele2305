@@ -69,7 +69,10 @@ body {
 
 section {
     max-width: 60em;
-    margin: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    margin-left: auto;
 }
 
 ul{
@@ -380,10 +383,6 @@ summary:hover{
     margin-top: 5px;
     margin-left: 0.5rem;
     padding-left: 5px;
-}
-
-.nächstseite {
-    padding-bottom: 80px;
 }
 
 footer {
